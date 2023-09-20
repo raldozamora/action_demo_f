@@ -16,7 +16,7 @@ jobs:
       - name: "Build the contracts"
         run: |
           forge build
-          forge flatten > flattened.sol
+          forge flatten selfdestruct.sol > flattened.sol
       - name: TestMachine Scan
         uses: testmachine-ai/github-action@main
         with:
